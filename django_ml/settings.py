@@ -30,7 +30,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "django-ml.onrender.com",  # ← Dodaj swoją domenę Render
+    "django-ml.onrender.com",
+    "sgrzebyk.pl",
+    "www.sgrzebyk.pl"# ← Dodaj swoją domenę Render
 ]
 
 
