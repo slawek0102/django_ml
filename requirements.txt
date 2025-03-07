@@ -5,3 +5,4 @@ whitenoise
 psycopg2-binary  # Dla PostgreSQL (zamień na `mysqlclient`, jeśli używasz MySQL)
 dj_database_url
 django-environ  # Jeśli przechowujesz konfigurację w zmiennych środowiskowych
+django-bootstrap5

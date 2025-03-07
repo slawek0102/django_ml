@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_bootstrap5",
 ]
 
 # Jeśli chcesz pobierać hosty z envVars w Render:
@@ -66,7 +67,7 @@ ROOT_URLCONF = "django_ml.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "home", "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
