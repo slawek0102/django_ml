@@ -35,9 +35,7 @@ ALLOWED_HOSTS = [
     "www.sgrzebyk.pl"# ← Dodaj swoją domenę Render
 ]
 
-
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -45,8 +43,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    "projects.apps.ProjectsConfig",
     "django_bootstrap5",
 ]
+
 
 # Jeśli chcesz pobierać hosty z envVars w Render:
 ALLOWED_HOSTS += os.getenv("ALLOWED_HOSTS", "").split(",")
@@ -67,7 +68,7 @@ ROOT_URLCONF = "django_ml.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "home", "templates")],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

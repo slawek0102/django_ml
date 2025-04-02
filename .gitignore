@@ -1,2 +1,5 @@
 .idea
 requirements_copy.txt
+.DS_Store
+django_ml/__pycache__/
+projects/__pycache__/
